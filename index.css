@@ -16,9 +16,9 @@ nav>div{
     flex-wrap: wrap;
     padding-top: 24px;
     margin: 0px 50px;
-}d
-nav>div>img{
-    width: 162px;
+}
+#logo{
+    height: 100px;
 }
 
 .search {
@@ -32,7 +32,7 @@ nav>div>img{
     border: none;
     border: 1px solid #999999;
     padding: 10px 25px;
-    width: 770px;
+    min-width: 770px;
     height: 50px;
     border-radius: 8px;
     font-size: 18px;
@@ -71,9 +71,18 @@ nav>div>img{
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
  nav{
-     height: 150px;
+     height: 260px;
  }   
  .search{
-     margin: 35px 75px;
+     margin: 35px 68px;
  }
+ .float {
+    float: right;
+    margin: -220px 50px;
+}
+.float button{
+    height: 70px;
+    width: 180px;
+    font-size: 30px;
+}
 }
