@@ -17,9 +17,7 @@ nav>div{
     padding-top: 24px;
     margin: 0px 50px;
 }
-#logo{
-    height: 100px;
-}
+
 
 .search {
     display: flex;
@@ -69,20 +67,49 @@ nav>div{
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 900px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
  nav{
      height: 260px;
  }   
  .search{
-     margin: 35px 68px;
+     margin: 35px 0px;
+ }
+ .search input{
+     height: 80px;
+     min-width: 860px;
+     font-size: 40px;
+ }
+ .search button{
+     height: 80px;
+     width: 80px;
  }
  .float {
     float: right;
-    margin: -220px 50px;
+    margin: -251px 70px;
 }
 .float button{
     height: 70px;
     width: 180px;
-    font-size: 30px;
+    font-size: 35px;
 }
+#logo{
+    height: 100px;
+}
+.search button img {
+    width: 50px;
+}
+}
+
+
+@media only screen 
+and (min-device-width : 700px) and (max-device-width : 1440px) and (-webkit-min-device-pixel-ratio: 1.0){
+    nav>div{
+        flex-direction: row;
+    }
+    .search{
+        margin-left: 50px;
+    }
+    .search input{
+        min-width: 440px;
+    }
 }
