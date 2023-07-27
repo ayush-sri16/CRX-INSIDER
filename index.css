@@ -104,10 +104,13 @@ nav>div{
     box-shadow: 0px 2px 18px 2px #00000012;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
     position: relative;
     top: 60px;
-
+}
+.insights>div{
+    margin: 1px;
 }
 .insights h1{
     font-size: 36px;
@@ -128,37 +131,50 @@ nav>div{
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
  nav{
-     height: 260px;
+     height: 190px;
  }   
  .search{
-     margin: 35px 0px;
+     margin: 35px -20px;
  }
  .search input{
-     height: 80px;
-     min-width: 860px;
-     font-size: 40px;
+     height: 55px;
+     min-width: 340px;
+     font-size: 22px;
  }
  .search button{
-     height: 80px;
-     width: 80px;
+     height: 55px;
+     width: 50px;
  }
  .float {
     float: right;
     margin: -251px 70px;
 }
 .float button{
-    height: 70px;
-    width: 180px;
-    font-size: 35px;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+    margin: 60px -50px;
 }
 #logo{
-    height: 100px;
+    height: 50px;
+    margin-left: -20px;
 }
 .search button img {
-    width: 50px;
+    width: 30px;
 }
 #accordionExample{
     display: none;
+}
+#mainSection{
+    width: 100vw;
+}
+.main{
+    flex-direction: column;
+}
+.insights{
+    width: 100% ;
+    height: auto;
+    top: 0;
 }
 }
 
